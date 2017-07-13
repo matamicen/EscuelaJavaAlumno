@@ -27,6 +27,11 @@ public class inicio {
 		System.out.println("Ok.");
 		System.out.println(alu2.getNombre() + "Colegio: " + alu2.getColegio());
 		
+		alu2.aproboUnaMateria();
+		alu2.aproboUnaMateria();
+		System.out.println("El alumno"+ alu2.getNombre() + "Aprobo: " + alu2.getMateriasAprobadas() + " Materias");
+		
+		
 		System.out.println("la cantidad de alumnos dado de alta son:" + Alumno.getCount());
 
 

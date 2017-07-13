@@ -5,6 +5,7 @@ public class Alumno {
 	private String nombre;
 	private String apellido;
 	private int edad;
+	private int materiasAprobadas;
 	private static String colegio;
 	private static int count=0;
 	
@@ -17,6 +18,7 @@ public class Alumno {
 	  this.nombre = nom;
 	  this.apellido = ape;
 	  this.edad = ed;
+	  this.materiasAprobadas=0;
 	  this.count++;
 	}
 
@@ -47,6 +49,16 @@ public class Alumno {
 	public static void setColegio(String colegio) {
 		Alumno.colegio = colegio;
 	}
+	
+	
+
+	public int getMateriasAprobadas() {
+		return materiasAprobadas;
+	}
+
+	public void setMateriasAprobadas(int materiasAprobadas) {
+		this.materiasAprobadas = materiasAprobadas;
+	}
 
 	public static int getCount() {
 		return count;
@@ -55,6 +67,13 @@ public class Alumno {
 	public static void setCount(int count) {
 		Alumno.count = count;
 	}
+	
+	public void aproboUnaMateria()
+	{
+		this.materiasAprobadas++;
+	}
+	
+	
 
 	
 	
